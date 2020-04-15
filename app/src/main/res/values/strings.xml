@@ -1,0 +1,53 @@
+<resources>
+
+
+    <string name="app_name">Latihan2</string>
+    <string name="A1bloodshare">BloodShare</string>
+    <string name="username">Username</string>
+    <string name="A1password">Password</string>
+    <string name="A1login">LOGIN</string>
+    <string name="A1or">OR</string>
+    <string name="A1cwb">CONNECT WITH FACEBOOK</string>
+    <string name="A1doesnt">doesn\'\ t have account ?</string>
+    <string name="register">Register</string>
+
+
+    <string name="A2email">Email</string>
+    <string name="A2PN">Phone Number</string>
+    <string name="A2male">Male</string>
+    <string name="A2female">Female</string>
+    <string name="A2retypepass">Retype Password</string>
+    <string name="A2personal">Personal</string>
+    <string name="A2org">Organization</string>
+    <string name="A2HomeAdd">Home Address</string>
+    <string name="A2DefaultLoc">Default Location</string>
+    <string name="A2Agree">Agree with Terms and Conditions</string>
+    <string name="A2register">REGISTER</string>
+
+
+    <string name="A3Almosthere">Almost There</string>
+    <string name="A3thanks">Thanks you for registering with us. One more \n step, you need to check
+        your email\n to active your account</string>
+    <string name="A3verify">VERIFY</string>
+
+
+    <string name="A4vya">Verify Your Account</string>
+    <string name="A4wehave">We have send verification code to your email</string>
+    <string name="A4enterverif">enter verification code here...</string>
+    <string name="A4send">SEND</string>
+    <string name="A4doesntget">doesn\'\t get the code? <b>Resend</b></string>
+
+
+    <string name="bloodgive">BLOOD GIVE</string>
+    <string name="bloodrec">BLOOD RECEIVED</string>
+    <string name="thanks">THANKS</string>
+    <string name="Search">Search Donor</string>
+    <string name="bloodneed">Blood Needed</string>
+    <string name="mess">Message</string>
+    <string name="donorh">Donor History</string>
+    <string name="searchd">Search donor near you</string>
+    <string name="user4">4 user need blood</string>
+    <string name="mess5">5 New Messages</string>
+    <string name="give5">5 gives, 2 Received</string>
+
+</resources>
