@@ -35,8 +35,8 @@
     <string name="A4wehave">We have send verification code to your email</string>
     <string name="A4enterverif">enter verification code here...</string>
     <string name="A4send">SEND</string>
-    <string name="A4doesntget">doesn\'\t get the code? <b>Resend</b></string>
-
+    <string name="A4doesntget">doesn\'\ t get the code? </string>
+    <string name="A4resend"> Resend</string>
 
     <string name="bloodgive">BLOOD GIVE</string>
     <string name="bloodrec">BLOOD RECEIVED</string>
@@ -49,5 +49,27 @@
     <string name="user4">4 user need blood</string>
     <string name="mess5">5 New Messages</string>
     <string name="give5">5 gives, 2 Received</string>
+
+
+    <string-array name="arrayrgoldar">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="arrayrhesus">
+        <item>Reshus</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="arrayjob">
+        <item>Job</item>
+        <item>Manager</item>
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+    
+
 
 </resources>

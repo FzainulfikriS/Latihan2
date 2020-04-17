@@ -80,6 +80,9 @@
         android:text="@string/A1cwb"
         android:textColor="@color/bginvitefr"
         android:textSize="16sp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:drawableStart="@drawable/ic_welcome_fb_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -101,11 +104,28 @@
         android:id="@+id/textView2"
         android:layout_width="153dp"
         android:layout_height="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="104dp"
         android:text="@string/A1doesnt"
+        android:textAlignment="center"
         android:textColor="@color/bginvitefr"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registerA1"
+        android:layout_width="57dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/background"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

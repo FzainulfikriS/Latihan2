@@ -11,12 +11,13 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="222dp"
+        android:layout_width="243dp"
         android:layout_height="60dp"
         android:layout_marginTop="176dp"
         android:text="@string/A3Almosthere"
         android:textColor="@color/background"
         android:textSize="35sp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,11 +36,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonverify"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
         android:text="@string/A3verify"
+        android:textColor="@color/background"
         android:background="@drawable/buttonhal1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

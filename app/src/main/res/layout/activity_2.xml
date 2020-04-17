@@ -5,246 +5,289 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity2">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical"
-       android:padding="32dp">
-
-       <EditText
-           android:id="@+id/reguser"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:backgroundTint="@color/Fontdesc"
-           android:textSize="14sp"
-           android:hint="@string/username"/>
-       <EditText
-           android:id="@+id/regemail"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:backgroundTint="@color/Fontdesc"
-           android:textSize="14sp"
-           android:hint="@string/A2email"/>
-       <EditText
-           android:id="@+id/regphone"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:backgroundTint="@color/Fontdesc"
-           android:textSize="14sp"
-           android:hint="@string/A2PN"/>
-       <RadioGroup
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:gravity="center"
-           android:orientation="horizontal">
-           <RadioButton
-               android:id="@+id/regmale"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_weight="1"
-               android:paddingStart="18dp"
-               android:paddingEnd="18dp"
-               android:checked="true"
-               android:textSize="14sp"
-               android:text="@string/A2male"
-               android:textColor="@color/Fontdesc"
-               android:onClick="onRadioButtonClicked"/>
-           <RadioButton
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:id="@+id/regfemale"
-               android:layout_weight="1"
-               android:text="@string/A2female"
-               android:textSize="14sp"
-               android:textColor="@color/Fontdesc"
-               android:paddingEnd="18dp"
-               android:paddingStart="18dp"
-               android:onClick="onRadioButtonClicked"
-               />
-       </RadioGroup>
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:paddingStart="4dp"
-           android:paddingEnd="4dp"
-           android:gravity="center_vertical"
-           android:layout_weight="1">
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               android:layout_marginEnd="32dp"
-               android:background="@drawable/background_spinner"
-               android:orientation="horizontal">
-               <Spinner
-                   android:id="@+id/regblood"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:background="@android:color/transparent"
-                   android:layout_centerVertical="true"
-                   android:spinnerMode="dropdown"
-                   android:paddingEnd="32dp"
-                   android:paddingStart="0dp"
-                   android:textSize="14sp">
-               </Spinner>
-               <ImageView
-                   android:layout_width="16dp"
-                   android:layout_height="16dp"
-                   android:layout_centerVertical="true"
-                   android:layout_gravity="center"
-                   android:layout_alignParentEnd="true"
-                   android:src="@drawable/ic_register_dropdown" />
-           </RelativeLayout>
-
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               android:layout_marginStart="32dp"
-               android:background="@drawable/background_spinner"
-               android:orientation="horizontal">
-               <Spinner
-                   android:id="@+id/spn_rhesus_register"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:background="@android:color/transparent"
-                   android:spinnerMode="dropdown"
-                   android:layout_centerVertical="true"
-                   android:paddingEnd="32dp"
-                   android:paddingStart="0dp"
-                   android:textSize="16sp">
-               </Spinner>
-               <ImageView
-                   android:layout_width="16dp"
-                   android:layout_height="16dp"
-                   android:layout_alignParentEnd="true"
-                   android:layout_centerVertical="true"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_register_dropdown" />
-           </RelativeLayout>
-       </LinearLayout>
-       <EditText
-           android:id="@+id/regpass"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:hint="@string/A1password"
-           android:textSize="14sp"
-           android:backgroundTint="@color/Fontdesc"/>
-       <EditText
-           android:id="@+id/regretype"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:hint="@string/A2retypepass"
-           android:layout_weight="1"
-           android:textSize="14sp"
-           android:backgroundTint="@color/Fontdesc"/>
-       <RadioGroup
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:gravity="center"
-           android:orientation="horizontal">
-           <RadioButton
-               android:id="@+id/regpersonal"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_weight="1"
-               android:paddingStart="18dp"
-               android:paddingEnd="18dp"
-               android:checked="true"
-               android:textSize="14sp"
-               android:text="@string/A2personal"
-               android:textColor="@color/Fontdesc"
-               android:onClick="onRadioButtonClicked"/>
-           <RadioButton
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:id="@+id/regorg"
-               android:layout_weight="1"
-               android:text="@string/A2org"
-               android:textSize="14sp"
-               android:textColor="@color/Fontdesc"
-               android:paddingEnd="18dp"
-               android:paddingStart="18dp"
-               android:onClick="onRadioButtonClicked"
-               />
-       </RadioGroup>
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="4dp"
-        android:paddingEnd="4dp"
-        android:gravity="center_vertical"
-        android:layout_weight="1">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+        android:layout_weight="1"
+        android:background="@drawable/ic_header"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            android:background="@drawable/background_spinner"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <EditText
+            android:id="@+id/reguser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:hint="@string/username"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/regemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:hint="@string/A2email"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/regphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:hint="@string/A2PN"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:orientation="horizontal">
-            <Spinner
-                android:id="@+id/regjob"
+
+            <RadioButton
+                android:id="@+id/regmale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:layout_centerVertical="true"
-                android:spinnerMode="dropdown"
-                android:paddingEnd="32dp"
-                android:paddingStart="0dp"
-                android:textSize="14sp">
-            </Spinner>
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/ic_register_dropdown" />
-        </RelativeLayout>
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/A2male"
+                android:textColor="@color/Fontdesc"
+                android:textSize="14sp"
+                tools:ignore="OnClick" />
+
+            <RadioButton
+                android:id="@+id/regfemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/A2female"
+                android:textColor="@color/Fontdesc"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/bgspin"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regblood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/Fontdesc"
+                    android:paddingEnd="32dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/arrayrgoldar"
+                    android:textSize="14sp"></Spinner>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_register_dropdown" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/bgspin"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regrhesus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/Fontdesc"
+                    android:entries="@array/arrayrhesus"
+                    android:paddingEnd="32dp"
+                    android:spinnerMode="dropdown"
+                    android:textSize="16sp"></Spinner>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_register_dropdown" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/regpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:hint="@string/A1password"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/regretype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:hint="@string/A2retypepass"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/regpersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/A2personal"
+                android:textColor="@color/Fontdesc"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/regorg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/A2org"
+                android:textColor="@color/Fontdesc"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="@drawable/bgspin"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regjob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="32dp"
+                    android:textColor="@color/Fontdesc"
+                    android:entries="@array/arrayjob"
+                    android:spinnerMode="dropdown"
+                    android:textSize="14sp"></Spinner>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_register_dropdown" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/reghome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:hint="@string/A2HomeAdd"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/regloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Fontdesc"
+            android:drawableEnd="@drawable/ic_blood_needed_location"
+            android:hint="@string/A2DefaultLoc"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:paddingStart="16dp"
+            android:text="@string/A2Agree"
+            android:textColor="@color/Fontdesc"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonhal2"
+            android:text="@string/A2register"
+            android:textColor="@color/lightblue"
+            android:textSize="14sp" />
     </LinearLayout>
-       <EditText
-           android:id="@+id/reghome"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:hint="@string/A2HomeAdd"
-           android:layout_weight="1"
-           android:textSize="14sp"
-           android:backgroundTint="@color/Fontdesc"/>
-       <EditText
-           android:id="@+id/regloc"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:hint="@string/A2DefaultLoc"
-           android:textSize="14sp"
-           android:backgroundTint="@color/Fontdesc"
-           android:layout_weight="1"
-           android:drawableEnd="@drawable/ic_blood_needed_location"/>
-       <CheckBox
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:textSize="14sp"
-           android:text="@string/A2Agree"
-           android:textColor="@color/Fontdesc"
-           android:checked="true"
-           android:paddingStart="16dp"/>
-       <Button
-           android:id="@+id/buttonhal2"
-           android:layout_width="match_parent"
-           android:layout_height="32dp"
-           android:layout_weight="1"
-           android:textSize="14sp"
-           android:text="@string/A2register"
-           android:textColor="@color/lightblue"
-           android:background="@drawable/buttonhal2"/>
-   </LinearLayout>
-        
+
 </androidx.constraintlayout.widget.ConstraintLayout>
